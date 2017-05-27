@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "buildex": "node ./node_modules/babel-cli/bin/babel.js example --out-dir libexample"
   },
   "keywords": [
     "stock",
@@ -15,10 +16,14 @@
   "license": "ISC",
   "devDependencies": {
     "ava": "^0.19.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
     "babel-core": "^6.24.1",
     "babel-cli": "^6.24.1"
   },
   "dependencies": {
+    "extargsparse": "^0.2.2",
+    "jstracer": "^1.0.8",
     "sequelize": "^3.30.4",
     "sqlite3": "^3.1.8"
   }
